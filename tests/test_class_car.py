@@ -8,13 +8,13 @@ class TestClass:
     def prius(self):
         return Car("Prius", "2004", "white")
 
-    def test_cond_1(self, prius):
-        assert prius.condition('test') == "New"
-
-    def test_cond_2(self, prius):
-        prius.drive(1000)
-        assert prius.condition('test') == "Used"
+    def test_condition(self, prius):
+        assert prius.condition() == "New"
 
     def test_drive(self, prius):
         prius.drive(1000)
         assert prius.mileage == 1000
+
+    def test_description(self, prius):
+        prius.drive(1000)
+        assert prius.condition() == "Used"
