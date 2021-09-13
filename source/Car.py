@@ -1,4 +1,3 @@
-
 class Car:
     is_new = True
 
@@ -19,6 +18,5 @@ class Car:
         self.mileage += distance
 
     def description(self):
-        print("This %s was made in %s. It is %s and its condition is %s." 
-              %(self.model, self.year, self.colour, self.condition()))
-
+        print("This %s was made in %s. It is %s and its condition is %s."
+              % (self.model, self.year, self.colour, self.condition()))
